@@ -14,7 +14,6 @@
     "gridsome": "^0.7.0",
     "gridsome-plugin-remark-shiki": "^0.5.0",
     "tailwindcss": "^1.9.6",
-    "typeface-roboto": "^1.1.13",
-    "vue-kinesis": "^1.1.5"
+    "typeface-roboto": "^1.1.13"
   }
 }

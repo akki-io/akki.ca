@@ -2681,11 +2681,6 @@ core-js-compat@^3.6.2, core-js-compat@^3.6.5:
     browserslist "^4.8.5"
     semver "7.0.0"
 
-core-js@^2.6.5:
-  version "2.6.11"
-  resolved "https://registry.yarnpkg.com/core-js/-/core-js-2.6.11.tgz#38831469f9922bded8ee21c9dc46985e0399308c"
-  integrity sha512-5wjnpaT/3dV+XB4borEsnAYQchn00XSgTAWKDkEqv+K8KevjbzmofK6hfJ9TZIlpj2N0xQpazy7PiRQiWHqzWg==
-
 core-js@^3.6.4, core-js@^3.6.5:
   version "3.6.5"
   resolved "https://registry.yarnpkg.com/core-js/-/core-js-3.6.5.tgz#7395dc273af37fb2e50e9bd3d9fe841285231d1a"
@@ -9500,14 +9495,6 @@ vue-hot-reload-api@^2.3.0:
   version "2.3.4"
   resolved "https://registry.yarnpkg.com/vue-hot-reload-api/-/vue-hot-reload-api-2.3.4.tgz#532955cc1eb208a3d990b3a9f9a70574657e08f2"
   integrity sha512-BXq3jwIagosjgNVae6tkHzzIk6a8MHFtzAdwhnV5VlvPTFxDCvIttgSiHWjdGoTJvXtmRu5HacExfdarRcFhog==
-
-vue-kinesis@^1.1.5:
-  version "1.1.5"
-  resolved "https://registry.yarnpkg.com/vue-kinesis/-/vue-kinesis-1.1.5.tgz#0ffcd83e994223ea55f219eb8715bc92fc2de020"
-  integrity sha512-ZBZ8ZUdZ9MsJ38SbXVt1vIBhdjUEx4+si+GFUegLSdP88qCbJbHpjiDcyxgf5yFxBZEfZtL0A5zWHfKEtrXVIQ==
-  dependencies:
-    core-js "^2.6.5"
-    vue "^2.6.10"
 
 vue-loader@^15.7.1:
   version "15.9.5"
