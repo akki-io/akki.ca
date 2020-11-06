@@ -7,8 +7,11 @@
     "explore": "gridsome explore"
   },
   "dependencies": {
+    "@fullhuman/postcss-purgecss": "^3.0.0",
     "@tailwindcss/ui": "^0.7.2",
     "gridsome": "^0.7.0",
-    "tailwindcss": "^1.9.6"
+    "tailwindcss": "^1.9.6",
+    "typeface-roboto": "^1.1.13",
+    "vue-kinesis": "^1.1.5"
   }
 }

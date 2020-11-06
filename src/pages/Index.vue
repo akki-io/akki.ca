@@ -1,33 +1,36 @@
 <template>
   <Layout>
-
-    <!-- Learn how to use images here: https://gridsome.org/docs/images -->
-    <g-image alt="Example image" src="~/favicon.png" width="135" />
-
-    <h1>Hello, world!</h1>
-
-    <p>
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur excepturi labore tempore expedita, et iste tenetur suscipit explicabo! Dolores, aperiam non officia eos quod asperiores
-    </p>
-
-    <p class="home-links">
-      <a href="https://gridsome.org/docs/" target="_blank" rel="noopener">Gridsome Docs</a>
-      <a href="https://github.com/gridsome/gridsome" target="_blank" rel="noopener">GitHub</a>
-    </p>
-
+    <main
+      class="pt-20 mx-auto max-w-screen-xl px-4 sm:mt-12 sm:px-6 md:mt-16 lg:mt-20 xl:mt-28"
+    >
+      <div class="text-center">
+        <kinesis-container>
+          <kinesis-element :strength="10">
+            <h2
+              class="text-4xl pb-5 tracking-tight leading-10 font-semibold text-gray-900 sm:text-5xl sm:leading-none md:text-8xl"
+            >
+              Big
+            </h2>
+          </kinesis-element>
+          <kinesis-element :strength="40">
+            <h2
+              class="text-4xl tracking-tight leading-10 font-semibold text-gray-900 sm:text-5xl sm:leading-none md:text-8xl"
+            >
+              <span class="text-primary">Experiences</span>
+            </h2>
+          </kinesis-element>
+        </kinesis-container>
+      </div>
+    </main>
   </Layout>
 </template>
 
 <script>
 export default {
   metaInfo: {
-    title: 'Hello, world!'
+    title: "Home"
   }
-}
+};
 </script>
 
-<style>
-.home-links a {
-  margin-right: 1rem;
-}
-</style>
+<style></style>
