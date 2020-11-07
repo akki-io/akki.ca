@@ -47,7 +47,7 @@
               <div
                 class="flex-1 rounded overflow-hidden shadow px-4 md:px-24 py-4 md:py-8"
               >
-                <!--                <vue-disqus shortname="tekzcorp" :identifier="$page.blog.id" />-->
+                <Disqus :identifier="$page.blog.id" />
               </div>
             </div>
           </div>
