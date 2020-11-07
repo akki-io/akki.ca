@@ -9,7 +9,7 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        sans: ["Roboto", "sans-serif", ...defaultTheme.fontFamily.sans]
+        sans: ["Nunito Sans", "sans-serif", ...defaultTheme.fontFamily.sans]
       },
       colors: {
         primary: "#2a4365"
