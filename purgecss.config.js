@@ -1,9 +1,3 @@
-class TailwindExtractor {
-  static extract(content) {
-    return content.match(/[A-z0-9-:\\/]+/g);
-  }
-}
-
 module.exports = {
   content: [
     "./src/**/*.vue",
@@ -11,9 +5,7 @@ module.exports = {
     "./src/**/*.jsx",
     "./src/**/*.html",
     "./src/**/*.pug",
-    "./src/**/*.md",
-    "./docs/**/*.md",
-    "./blog/**/*.md"
+    "./src/**/*.md"
   ],
   whitelist: [
     "body",
@@ -22,12 +14,11 @@ module.exports = {
     "a",
     "g-image",
     "g-image--lazy",
-    "g-image--loaded",
-    "active"
+    "g-image--loaded"
   ],
   extractors: [
     {
-      extractor: TailwindExtractor,
+      extractor: content => content.match(/[A-z0-9-:\\/]+/g),
       extensions: ["vue", "js", "jsx", "md", "html", "pug"]
     }
   ]
