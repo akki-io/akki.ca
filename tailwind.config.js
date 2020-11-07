@@ -8,9 +8,6 @@ module.exports = {
   purge: [],
   theme: {
     extend: {
-      fontFamily: {
-        sans: ["Nunito Sans", "sans-serif", ...defaultTheme.fontFamily.sans]
-      },
       colors: {
         primary: "#2a4365"
       },
@@ -20,6 +17,31 @@ module.exports = {
         "9xl": "7rem",
         "10xl": "8rem"
       }
+    },
+    fontFamily: {
+      sans: [
+        "Nunito Sans",
+        "-apple-system",
+        "BlinkMacSystemFont",
+        '"Segoe UI"',
+        '"Helvetica Neue"',
+        "Arial",
+        '"Noto Sans"',
+        "sans-serif",
+        '"Apple Color Emoji"',
+        '"Segoe UI Emoji"',
+        '"Segoe UI Symbol"',
+        '"Noto Color Emoji"'
+      ],
+      serif: ["Georgia", "Cambria", '"Times New Roman"', "Times", "serif"],
+      mono: [
+        "Menlo",
+        "Monaco",
+        "Consolas",
+        '"Liberation Mono"',
+        '"Courier New"',
+        "monospace"
+      ]
     }
   },
   variants: {},
