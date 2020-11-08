@@ -19,7 +19,7 @@
         >
           <div
             class="flex flex-col rounded shadow overflow-hidden"
-            v-for="(post, index) in $page.posts.edges"
+            v-for="(post, index) in $page.blogs.edges"
             :key="post.id"
             :post="post"
             :index="index"
@@ -60,6 +60,14 @@
             </g-link>
           </div>
         </div>
+        <div class="py-6">
+          <pagination-posts
+            v-if="$page.blogs.pageInfo.totalPages > 1"
+            base="/blog"
+            :totalPages="$page.blogs.pageInfo.totalPages"
+            :currentPage="$page.blogs.pageInfo.currentPage"
+          />
+        </div>
       </div>
     </div>
   </Layout>
@@ -67,7 +75,7 @@
 
 <page-query>
 query Blogs ($page: Int) {
-  posts: allBlog (sortBy: "date", order: DESC, perPage: 6, page: $page) @paginate {
+  blogs: allBlog (sortBy: "date", order: DESC, perPage: 6, page: $page) @paginate {
     totalCount
     pageInfo {
       totalPages
@@ -91,7 +99,12 @@ query Blogs ($page: Int) {
 </page-query>
 
 <script>
+import PaginationPosts from "../components/Pagination";
+
 export default {
+  components: {
+    PaginationPosts
+  },
   metaInfo: {
     title: "Blog"
   },

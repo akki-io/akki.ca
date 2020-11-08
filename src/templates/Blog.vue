@@ -1,55 +1,142 @@
 <template>
   <Layout>
-    <div
-      class="w-full m-0 p-0 bg-cover bg-post"
-      v-bind:style="{
-        backgroundImage: 'url(' + $page.blog.featureImage.src + ')'
-      }"
-    >
-      <div
-        class="mx-auto max-w-screen-lg pt-16 md:pt-32 text-center break-normal"
-      >
-        <p class="font-bold text-3xl md:text-5xl text-gray-300">
-          Blog
-        </p>
-        <p class="text-xl md:text-2xl text-gray-500">
-          How-Tos, Deep-Dives, Brain-Dumps, and More
-        </p>
+    <!--
+  Tailwind UI components require Tailwind CSS v1.8 and the @tailwindcss/ui plugin.
+  Read the documentation to get started: https://tailwindui.com/documentation
+-->
+    <!-- This component requires Tailwind CSS >= 1.5.1 and @tailwindcss/ui >= 0.4.0 -->
+    <div class="relative py-16 bg-white overflow-hidden">
+      <div class="hidden lg:block lg:absolute lg:inset-y-0 lg:h-full lg:w-full">
+        <div class="relative h-full text-lg max-w-prose mx-auto">
+          <svg
+            class="absolute top-12 left-full transform translate-x-32"
+            width="404"
+            height="384"
+            fill="none"
+            viewBox="0 0 404 384"
+          >
+            <defs>
+              <pattern
+                id="74b3fd99-0a6f-4271-bef2-e80eeafdf357"
+                x="0"
+                y="0"
+                width="20"
+                height="20"
+                patternUnits="userSpaceOnUse"
+              >
+                <rect
+                  x="0"
+                  y="0"
+                  width="4"
+                  height="4"
+                  class="text-gray-200"
+                  fill="currentColor"
+                />
+              </pattern>
+            </defs>
+            <rect
+              width="404"
+              height="384"
+              fill="url(#74b3fd99-0a6f-4271-bef2-e80eeafdf357)"
+            />
+          </svg>
+          <svg
+            class="absolute top-1/2 right-full transform -translate-y-1/2 -translate-x-32"
+            width="404"
+            height="384"
+            fill="none"
+            viewBox="0 0 404 384"
+          >
+            <defs>
+              <pattern
+                id="f210dbf6-a58d-4871-961e-36d5016a0f49"
+                x="0"
+                y="0"
+                width="20"
+                height="20"
+                patternUnits="userSpaceOnUse"
+              >
+                <rect
+                  x="0"
+                  y="0"
+                  width="4"
+                  height="4"
+                  class="text-gray-200"
+                  fill="currentColor"
+                />
+              </pattern>
+            </defs>
+            <rect
+              width="404"
+              height="384"
+              fill="url(#f210dbf6-a58d-4871-961e-36d5016a0f49)"
+            />
+          </svg>
+          <svg
+            class="absolute bottom-12 left-full transform translate-x-32"
+            width="404"
+            height="384"
+            fill="none"
+            viewBox="0 0 404 384"
+          >
+            <defs>
+              <pattern
+                id="d3eb07ae-5182-43e6-857d-35c643af9034"
+                x="0"
+                y="0"
+                width="20"
+                height="20"
+                patternUnits="userSpaceOnUse"
+              >
+                <rect
+                  x="0"
+                  y="0"
+                  width="4"
+                  height="4"
+                  class="text-gray-200"
+                  fill="currentColor"
+                />
+              </pattern>
+            </defs>
+            <rect
+              width="404"
+              height="384"
+              fill="url(#d3eb07ae-5182-43e6-857d-35c643af9034)"
+            />
+          </svg>
+        </div>
       </div>
-    </div>
-    <div class="max-w-screen-lg mx-auto py-4 -mt-48 md:-mt-32 bg-white">
-      <div class="mx-0">
-        <div class="w-full leading-normal rounded-t">
-          <div class="flex flex-wrap justify-between pt-0 md:pt-12">
-            <div class="w-full md:w-full flex flex-col flex-grow flex-shrink">
-              <div
-                class="flex-1 rounded-t overflow-hidden rounded shadow px-4 md:px-24 py-4 md:py-8"
-              >
-                <h1
-                  class=" w-full text-3xl md:text-5xl leading-tight font-bold px-0 md:px-12 py-2 md:py-6 text-center"
-                >
-                  {{ $page.blog.title }}
-                </h1>
-                <div
-                  class="w-full markdown-body py-4 md:py-8 border-b-2"
-                  v-html="$page.blog.content"
-                ></div>
-                <p class="w-full text-xs md:text-sm pt-4 md:pt-8 uppercase">
-                  POSTED IN
-                  <span v-for="tag in $page.blog.tags">{{ tag.title }}, </span>
-                  <span>BLOG</span>
-                </p>
-              </div>
-            </div>
-            <div
-              class="w-full md:w-full flex flex-col flex-grow flex-shrink mt-8"
-            >
-              <div
-                class="flex-1 rounded overflow-hidden shadow px-4 md:px-24 py-4 md:py-8"
-              >
-                <Disqus :identifier="$page.blog.id" />
-              </div>
-            </div>
+      <div class="relative px-4 sm:px-6 lg:px-8">
+        <div class="text-lg max-w-prose mx-auto mb-6">
+          <p
+            class="text-base text-center leading-6 text-indigo-600 font-semibold tracking-wide uppercase"
+          >
+            POSTED IN
+            <span v-for="tag in $page.blog.tags">{{ tag.title }}, </span>
+            <span>BLOG</span>
+          </p>
+          <h1
+            class="mt-2 mb-8 text-3xl text-center leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl sm:leading-10"
+          >
+            {{ $page.blog.title }}
+          </h1>
+        </div>
+        <div class="prose prose-lg mx-auto">
+          <figure>
+            <img
+              class="w-full rounded-lg"
+              :src="$page.blog.featureImage.src"
+              alt=""
+              width="1310"
+              height="873"
+            />
+          </figure>
+          <div
+            class="w-full markdown-body py-4"
+            v-html="$page.blog.content"
+          ></div>
+          <div class="py-4">
+            <Disqus :identifier="$page.blog.id" />
           </div>
         </div>
       </div>
