@@ -1,14 +1,20 @@
-# Default starter for Gridsome
+# akki.ca
 
-This is the project you get when you run `gridsome create new-project`.
+[![amplifybutton](https://oneclick.amplifyapp.com/button.svg)](https://console.aws.amazon.com/amplify/home#/deploy?repo=https://github.com/akki-io/akki.ca)
 
-### 1. Install Gridsome CLI tool if you don't have
+A personal website and blog.
 
-`npm install --global @gridsome/cli`
+### Build using
 
-### 2. Create a Gridsome project
+- [Gridsome](https://gridsome.org/)
+- [Tailwind CSS](https://tailwindcss.com/)
+- [Tailwind UI](https://tailwindui.com/)
 
-1. `gridsome create my-gridsome-site` to install default starter
-2. `cd my-gridsome-site` to open the folder
-3. `gridsome develop` to start a local dev server at `http://localhost:8080`
-4. Happy coding 🎉🙌
+## Installation
+
+1. Clone the repo: `git clone https://github.com/akki-io/akki.ca.git`
+1. `cd akki.ca`
+1. `npm install`
+1. `gridsome develop` to start a local dev server at `http://localhost:8080`
+
+
