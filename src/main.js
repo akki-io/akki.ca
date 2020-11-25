@@ -16,14 +16,14 @@ export default function(Vue, { router, head, isClient }) {
     shortname: "akki-ca"
   });
 
-  if (process.env.GOOGLE_ANALYTICS) {
+  if (process.env.GRIDSOME_GOOGLE_ANALYTICS) {
     Vue.use(VueGtag, {
-      config: { id: process.env.GOOGLE_ANALYTICS }
+      config: { id: process.env.GRIDSOME_GOOGLE_ANALYTICS }
     });
   }
 
   Sentry.init({
-    dsn: process.env.SENTRY_DSN,
+    dsn: process.env.GRIDSOME_SENTRY_DSN,
     integrations: [
       new VueIntegration({
         Vue,
