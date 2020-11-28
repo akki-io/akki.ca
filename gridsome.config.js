@@ -30,6 +30,31 @@ module.exports = {
           ]
         }
       }
+    },
+    {
+      use: "@gridsome/vue-remark",
+      options: {
+        index: ["README"],
+        baseDir: "./tutorial/laravel-docker",
+        pathPrefix: "/tutorial/laravel-docker",
+        typeName: "LaravelDocker",
+        template: "./src/templates/LaravelDockerPage.vue",
+        plugins: [
+          "@gridsome/remark-prismjs",
+          [
+            "gridsome-plugin-remark-shiki",
+            { theme: "material-theme-palenight", skipInline: false }
+          ]
+        ],
+        remark: {
+          autolinkHeadings: {
+            content: {
+              type: "text",
+              value: "#"
+            }
+          }
+        }
+      }
     }
   ],
   css: {

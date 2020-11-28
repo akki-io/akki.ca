@@ -1,4 +1,5 @@
 import DefaultLayout from "~/layouts/Default.vue";
+import TutorialLayout from "~/layouts/Tutorial.vue";
 import VueDisqus from "vue-disqus";
 import * as Sentry from "@sentry/browser";
 import { Vue as VueIntegration } from "@sentry/integrations";
@@ -11,6 +12,7 @@ require("typeface-nunito");
 
 export default function(Vue, { router, head, isClient }) {
   Vue.component("Layout", DefaultLayout);
+  Vue.component("TutorialLayout", TutorialLayout);
 
   Vue.use(VueDisqus, {
     shortname: "akki-ca"
