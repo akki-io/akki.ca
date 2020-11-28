@@ -5,6 +5,8 @@ import * as Sentry from "@sentry/browser";
 import { Vue as VueIntegration } from "@sentry/integrations";
 import { Integrations } from "@sentry/tracing";
 import VueGtag from "vue-gtag";
+import NProgress from "nprogress";
+import "nprogress/nprogress.css";
 
 require("~/assets/css/styles.css");
 require("~/assets/css/github-markdown.css");
@@ -34,5 +36,18 @@ export default function(Vue, { router, head, isClient }) {
       new Integrations.BrowserTracing()
     ],
     tracesSampleRate: 1.0
+  });
+
+  router.beforeEach((to, from, next) => {
+    if (!to.hash && typeof document !== "undefined") {
+      NProgress.start();
+    }
+    next();
+  });
+
+  router.afterEach((to, from) => {
+    if (!to.hash && typeof document !== "undefined") {
+      NProgress.done();
+    }
   });
 }

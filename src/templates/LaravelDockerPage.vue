@@ -1,6 +1,6 @@
 <template>
-  <TutorialLayout :subtitles="subtitles" :links="links">
-    <VueRemarkContent class="post mb"></VueRemarkContent>
+  <TutorialLayout :subtitles="subtitles" :links="links" :showOnThisPage="true">
+    <VueRemarkContent class="markdown-body remark-post pl-4"></VueRemarkContent>
   </TutorialLayout>
 </template>
 
@@ -36,7 +36,7 @@ export default {
         index,
         arr
       ) {
-        return [2, 3].includes(value.depth);
+        return [2].includes(value.depth);
       });
       return subtitles;
     }

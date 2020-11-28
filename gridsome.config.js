@@ -40,10 +40,9 @@ module.exports = {
         typeName: "LaravelDocker",
         template: "./src/templates/LaravelDockerPage.vue",
         plugins: [
-          "@gridsome/remark-prismjs",
           [
             "gridsome-plugin-remark-shiki",
-            { theme: "material-theme-palenight", skipInline: false }
+            { theme: "material-theme-palenight", skipInline: true }
           ]
         ],
         remark: {
