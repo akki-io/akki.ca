@@ -1,8 +1,4 @@
 <template>
-  <!--
-  Tailwind UI components require Tailwind CSS v1.8 and the @tailwindcss/ui plugin.
-  Read the documentation to get started: https://tailwindui.com/documentation
--->
   <nav class=" px-4 flex items-center justify-between sm:px-0">
     <div class="w-0 flex-1 flex">
       <g-link

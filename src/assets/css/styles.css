@@ -3,3 +3,46 @@
 @tailwind components;
 
 @tailwind utilities;
+
+.scrollbar-w-2::-webkit-scrollbar {
+    @apply w-2 h-2 !important;
+}
+
+.scrollbar-track-gray-lighter::-webkit-scrollbar-track {
+    @apply bg-gray-200 !important;
+}
+
+.scrollbar-thumb-gray::-webkit-scrollbar-thumb {
+    @apply bg-gray-300 !important;
+}
+
+.scrollbar-thumb-rounded::-webkit-scrollbar-thumb {
+    @apply rounded !important;
+}
+
+.remark-post h1 a,
+.remark-post h2 a,
+.remark-post h3 a,
+.remark-post h4 a {
+    @apply float-left top-0 -ml-5 text-center w-3 opacity-0;
+}
+
+.remark-post h1:hover a,
+.remark-post h2:hover a,
+.remark-post h3:hover a,
+.remark-post h4:hover a {
+    @apply opacity-100;
+}
+
+.remark-post h2,
+.remark-post h3 {
+    @apply pt-12 -mt-8 !important;
+}
+
+.remark-post h2:before {
+    content: " ";
+}
+
+.remark-post h2:before {
+    @apply block mb-6 border-t border-solid border-gray-200;
+}

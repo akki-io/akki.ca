@@ -11,6 +11,7 @@
 <script>
 import MenuComponent from "../components/Menu";
 import FooterComponent from "../components/Footer";
+
 export default {
   components: {
     MenuComponent,

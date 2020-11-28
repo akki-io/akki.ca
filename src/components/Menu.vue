@@ -1,11 +1,14 @@
 <template>
-  <div class="relative bg-white shadow-sm">
+  <div
+    class="relative shadow-sm lg:w-full lg:sticky lg:top-0 lg:z-50"
+    style="background: hsla(0,0%,100%,0.9)"
+  >
     <div class="max-w-7xl mx-auto px-4 sm:px-6">
       <div
-        class="flex justify-between items-center py-6 md:justify-start md:space-x-10"
+        class="flex justify-between items-center py-3 md:justify-start md:space-x-10"
       >
         <div class="w-0 flex-1 flex">
-          <g-link to="/" class="inline-flex text-3xl text-primary font-medium">
+          <g-link to="/" class="inline-flex text-2xl text-primary font-medium">
             Akshansh Khare
           </g-link>
         </div>
