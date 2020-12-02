@@ -2,139 +2,30 @@
   items:
     - title: Introduction
       link: /tutorial/laravel-docker/
-    - title: Prerequisites
-      link: /tutorial/laravel-docker/core-concepts/
-    - title: Final Product
-      link: /tutorial/laravel-docker/fast-by-default/
+    - title: Architecture
+      link: /tutorial/laravel-docker/architecture/
+    - title: TL;DR
+      link: /tutorial/laravel-docker/tldr/
 
 - title : IMAGE CREATION
   items:
+    - title: Base Image
+      link: /tutorial/laravel-docker/base-image/
+    - title: Web Image
+      link: /tutorial/laravel-docker/web-image/
+    - title: Worker Image
+      link: /tutorial/laravel-docker/worker-image/
+    - title: Horizon Image
+      link: /tutorial/laravel-docker/horizon-image/
+    - title: Cron Image
+      link: /tutorial/laravel-docker/cron-image/
+
+- title : PUTTING IT TOGETHER
+  items:
     - title: Directory structure
-      link: /tutorial/laravel-docker/directory-structure/
-    - title: Project configuration
-      link: /tutorial/laravel-docker/config/
-    - title: Pages
-      link: /tutorial/laravel-docker/pages/
-    - title: Collections
-      link: /tutorial/laravel-docker/collections/
-    - title: Templates
-      link: /tutorial/laravel-docker/templates/
-    - title: Layouts
-      link: /tutorial/laravel-docker/layouts/
-    - title: Components
-      link: /tutorial/laravel-docker/components/
-    - title: Linking
-      link: /tutorial/laravel-docker/linking/
-    - title: Dynamic Routing
-      link: /tutorial/laravel-docker/dynamic-routing/
-    - title: Image processing
-      link: /tutorial/laravel-docker/images/
-    - title: Populating <head>
-      link: /tutorial/laravel-docker/head/
-    - title: Environment Variables
-      link: /tutorial/laravel-docker/environment-variables/
+      link: /tutorial/laravel-docker/core-concepts/
 
-- title : Working with data
+- title : ADVANCED
   items:
-    - title: GraphQL data layer
-      link: /tutorial/laravel-docker/data-layer/
-    - title: Importing data
-      link: /tutorial/laravel-docker/fetching-data/
-    - title: Querying data
-      link: /tutorial/laravel-docker/querying-data/
-    - title: Filtering data
-      link: /tutorial/laravel-docker/filtering-data/
-    - title: Taxonomy pages
-      link: /tutorial/laravel-docker/taxonomies/
-    - title: Paginate data
-      link: /tutorial/laravel-docker/pagination/
-    - title: Global metadata
-      link: /tutorial/laravel-docker/metadata/
-    - title: Client-side data
-      link: /tutorial/laravel-docker/client-side-data/
-
-- title : Styles and Assets
-  items:
-    - title: Use CSS in Gridsome
-      link: /tutorial/laravel-docker/assets-css/
-    - title: Add custom fonts
-      link: /tutorial/laravel-docker/assets-fonts/
-    - title: Add external scripts
-      link: /tutorial/laravel-docker/assets-scripts/
-    - title: Add SVG icons
-      link: /tutorial/laravel-docker/assets-svg/
-
-- title : Guides
-  items:
-    - title: Add a form
-      link: /tutorial/laravel-docker/guide-forms/
-    - title: Add a search *
-      link: /tutorial/laravel-docker/guide-search/
-    - title: Add comments
-      link: /tutorial/laravel-docker/guide-comments/
-    - title: Add Netlify CMS
-      link: /tutorial/laravel-docker/guide-netlify-cms/
-    - title: Overriding index.html
-      link: /tutorial/laravel-docker/overriding-index/
-    - title: Overriding App.vue
-      link: /tutorial/laravel-docker/overriding-app/
-    - title: Page transitions
-      link: /tutorial/laravel-docker/page-transitions/
-    - title: body & html attributes
-      link: /tutorial/laravel-docker/body-html-attributes/
-
-- title: API Reference
-  items:
-    - title: Gridsome CLI
-      link: /tutorial/laravel-docker/gridsome-cli/
-    - title: Server API
-      link: /tutorial/laravel-docker/server-api/
-    - title: Data store API
-      link: /tutorial/laravel-docker/data-store-api/
-    - title: Schema API
-      link: /tutorial/laravel-docker/schema-api/
-    - title: Pages API
-      link: /tutorial/laravel-docker/pages-api/
-    - title: Client API
-      link: /tutorial/laravel-docker/client-api/
-    - title: Transformer API
-      link: /tutorial/laravel-docker/transformer-api/
-
-- title: Deploy
-  items:
-    - title: Netlify
-      link: /tutorial/laravel-docker/deploy-to-netlify/
-    - title: AWS Amplify
-      link: /tutorial/laravel-docker/deploy-to-amplify/
-    - title: ZEIT Now
-      link: /tutorial/laravel-docker/deploy-to-zeit-now/
-    - title: Amazon S3
-      link: /tutorial/laravel-docker/deploy-to-amazon-s3/
-    - title: GitLab Pages
-      link: /tutorial/laravel-docker/deploy-to-gitlab/
-    - title: Github Pages
-      link: /tutorial/laravel-docker/deploy-to-github/
-    - title: Google Cloud Platform
-      link: /tutorial/laravel-docker/deploy-to-google/
-
-- title: Contribute
-  items:
-    - title: How to contribute
-      link: /tutorial/laravel-docker/how-to-contribute/
-    - title: How to create a plugin
-      link: /tutorial/laravel-docker/how-to-create-a-plugin/
-    - title: Code of conduct
-      link: /tutorial/laravel-docker/code-of-conduct/
-
-- title: Help
-  items:
-  - title: Prerequisites
-    link: /tutorial/laravel-docker/prerequisites/
-  - title: How to upgrade
-    link: /tutorial/laravel-docker/how-to-upgrade/
-  - title: Troubleshooting
-    link: /tutorial/laravel-docker/troubleshooting/
-  - title: Dev tools
-    link: /tutorial/laravel-docker/dev-tools/
-  - title: FAQ
-    link: /tutorial/laravel-docker/faq/
+    - title: Directory structure
+      link: /tutorial/laravel-docker/core-concepts/

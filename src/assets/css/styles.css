@@ -46,3 +46,22 @@
 .remark-post h2:before {
     @apply block mb-6 border-t border-solid border-gray-200;
 }
+
+#sidebar a.active--exact {
+    @apply text-primary;
+}
+
+#sidebar a.active--exact:before {
+    content: " ";
+    width: 8px;
+    height: 8px;
+    left: -0.5px;
+    top: 50%;
+    margin-top: -4px;
+    -webkit-animation: scaleIn .7s forwards;
+    animation: scaleIn .7s forwards;
+}
+
+#sidebar a.active--exact:before {
+    @apply rounded-full absolute bg-primary;
+}

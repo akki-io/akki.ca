@@ -60,7 +60,8 @@
             </g-link>
           </div>
         </div>
-        <div class="py-6">
+        <hr class="border-gray-200 mt-10 mb-4" />
+        <div class="">
           <pagination-posts
             v-if="$page.blogs.pageInfo.totalPages > 1"
             base="/blog"
