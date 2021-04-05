@@ -65,6 +65,7 @@
 #sidebar a.active--exact:before {
     @apply rounded-full absolute bg-primary;
 }
+
 #nprogress .bar {
     @apply bg-dimmed-text-link !important;
 }
