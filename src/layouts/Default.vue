@@ -1,7 +1,7 @@
 <template>
   <div class="relative flex flex-col min-h-screen">
     <menu-component></menu-component>
-    <main class="lg:relative flex-grow main-content">
+    <main class="lg:relative flex-grow main-content bg-dimmed-bg-canvas">
       <slot></slot>
     </main>
     <footer-component></footer-component>

@@ -7,6 +7,7 @@ import { Integrations } from "@sentry/tracing";
 import VueGtag from "vue-gtag";
 import NProgress from "nprogress";
 import "nprogress/nprogress.css";
+import VueParticles from "vue-particles";
 
 require("~/assets/css/styles.css");
 require("~/assets/css/github-markdown.css");
@@ -19,6 +20,8 @@ export default function(Vue, { router, head, isClient }) {
   Vue.use(VueDisqus, {
     shortname: "akki-ca"
   });
+
+  Vue.use(VueParticles);
 
   if (process.env.GRIDSOME_GOOGLE_ANALYTICS) {
     Vue.use(VueGtag, {
