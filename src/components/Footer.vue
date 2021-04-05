@@ -1,20 +1,12 @@
 <template>
-  <!--
-  Tailwind UI components require Tailwind CSS v1.8 and the @tailwindcss/ui plugin.
-  Read the documentation to get started: https://tailwindui.com/documentation
--->
-  <!--
-  Tailwind UI components require Tailwind CSS v1.8 and the @tailwindcss/ui plugin.
-  Read the documentation to get started: https://tailwindui.com/documentation
--->
-  <footer class="bg-white">
+  <footer class="bg-dimmed-bg-canvas">
     <div
       class="max-w-screen-xl mx-auto py-12 px-4 overflow-hidden space-y-2 sm:px-6 lg:px-8"
     >
       <div class="flex justify-center space-x-3">
         <a
           href="https://www.instagram.com/tuktuktuk20/"
-          class="text-gray-400 hover:text-gray-500"
+          class="text-dimmed-text-secondary hover:text-gray-500"
           target="_blank"
         >
           <span class="sr-only">Instagram</span>
@@ -34,7 +26,7 @@
         <a
           href="https://github.com/akki-io"
           target="_blank"
-          class="text-gray-400 hover:text-gray-500"
+          class="text-dimmed-text-secondary hover:text-gray-500"
         >
           <span class="sr-only">GitHub</span>
           <svg
@@ -52,7 +44,7 @@
         </a>
       </div>
 
-      <p class="text-center text-sm leading-6 text-gray-400">
+      <p class="text-center text-xs leading-6 text-dimmed-text-secondary">
         Akshansh Khare &copy; {{ new Date().getFullYear() }}. All rights
         reserved.
       </p>
