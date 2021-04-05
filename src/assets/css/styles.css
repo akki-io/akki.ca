@@ -65,3 +65,48 @@
 #sidebar a.active--exact:before {
     @apply rounded-full absolute bg-primary;
 }
+#nprogress .bar {
+    @apply bg-dimmed-text-link !important;
+}
+
+#nprogress .spinner {
+    display: none !important;
+}
+
+.prose h1,
+.prose h2,
+.prose h3,
+.prose h4,
+.prose strong,
+.prose p {
+    @apply text-dimmed-text-primary;
+}
+
+.prose h1, .prose h2, .prose h3 {
+    @apply pb-1 border-b border-dimmed-border-secondary;
+}
+
+.markdown-body a, .prose a {
+    @apply text-dimmed-text-link !important;
+}
+
+.prose code::before, .prose code::after {
+    content: none;
+}
+
+.markdown-body pre, .prose pre {
+    @apply bg-dimmed-bg-tertiary !important;
+}
+
+#particles-js {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+img {
+    -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(100%);
+}

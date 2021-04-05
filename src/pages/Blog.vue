@@ -4,12 +4,12 @@
       <div class="relative max-w-7xl mx-auto">
         <div class="text-center">
           <h2
-            class="text-3xl leading-9 tracking-tight font-extrabold text-gray-900 sm:text-4xl sm:leading-10"
+            class="text-3xl leading-9 tracking-tight font-extrabold text-dimmed-text-primary sm:text-4xl sm:leading-10"
           >
             From the blog
           </h2>
           <p
-            class="mt-3 max-w-2xl mx-auto text-xl leading-7 text-gray-500 sm:mt-4"
+            class="mt-3 max-w-2xl mx-auto text-xl leading-7 text-dimmed-text-secondary sm:mt-4"
           >
             How-Tos, Deep-Dives, Brain-Dumps, and More
           </p>
@@ -18,7 +18,7 @@
           class="mt-12 grid gap-5 max-w-lg mx-auto lg:grid-cols-3 lg:max-w-none"
         >
           <div
-            class="flex flex-col rounded shadow overflow-hidden"
+            class="flex flex-col rounded overflow-hidden border border-dimmed-border-primary hover:bg-dimmed-bg-tertiary"
             v-for="(post, index) in $page.blogs.edges"
             :key="post.id"
             :post="post"
@@ -31,27 +31,31 @@
                   class="h-48 w-full object-cover"
                 />
               </div>
-              <div class="flex-1 bg-white p-6 flex flex-col justify-between">
+              <div class="flex-1 p-6 flex flex-col justify-between">
                 <div class="flex-1">
-                  <p class="text-sm leading-5 font-medium text-indigo-600">
+                  <p
+                    class="text-sm leading-5 font-medium text-dimmed-text-secondary"
+                  >
                     <span v-for="tag in post.node.tags">{{ tag.title }}, </span>
                     <span>BLOG</span>
                   </p>
 
                   <h3
-                    class="mt-2 text-xl leading-7 font-semibold text-gray-900"
+                    class="mt-2 text-xl leading-7 font-semibold text-dimmed-text-primary"
                   >
                     {{ post.node.title }}
                   </h3>
                   <p
-                    class="mt-3 text-base leading-6 text-gray-500"
+                    class="mt-3 text-base leading-6 text-dimmed-text-secondary"
                     v-summarytext
                     v-html="post.node.content"
                   ></p>
                 </div>
                 <div class="mt-6 flex items-center">
                   <div class="">
-                    <div class="flex text-sm leading-5 text-gray-500">
+                    <div
+                      class="flex text-sm leading-5 text-dimmed-text-secondary"
+                    >
                       <span> {{ post.node.timeToRead }} min read </span>
                     </div>
                   </div>

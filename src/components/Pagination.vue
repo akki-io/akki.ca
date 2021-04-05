@@ -4,12 +4,12 @@
       <g-link
         :to="previousPage"
         :class="{
-          'text-gray-400 hover:text-gray-400 cursor-not-allowed': !showPreviousPage
+          'text-dimmed-text-secondary hover:text-dimmed-text-secondary cursor-not-allowed': !showPreviousPage
         }"
-        class="-mt-px pt-4 pr-1 inline-flex items-center text-sm leading-5 font-medium text-gray-500 hover:text-gray-700 hover:border-gray-300 focus:outline-none focus:text-gray-700 focus:border-gray-400 transition ease-in-out duration-150"
+        class="-mt-px pt-4 pr-1 inline-flex items-center text-sm leading-5 font-medium text-dimmed-text-secondary hover:text-dimmed-text-primary transition ease-in-out duration-150"
       >
         <svg
-          class="mr-3 h-5 w-5 text-gray-400"
+          class="mr-3 h-5 w-5 text-dimmed-text-secondary"
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 20 20"
           fill="currentColor"
@@ -24,7 +24,7 @@
       </g-link>
     </div>
     <div
-      class="hidden md:flex text-sm leading-5 font-medium text-gray-500 -mt-px pt-4 pr-1 inline-flex items-center"
+      class="hidden md:flex text-sm leading-5 font-medium text-dimmed-text-secondary -mt-px pt-4 pr-1 inline-flex items-center"
     >
       Page {{ currentPage }} of {{ totalPages }}
     </div>
@@ -32,14 +32,13 @@
       <g-link
         :to="nextPage"
         :class="{
-          'text-gray-400 hover:text-gray-400 cursor-not-allowed': !showNextPage
+          'text-dimmed-text-secondary hover:text-dimmed-text-secondary cursor-not-allowed': !showNextPage
         }"
-        class="-mt-px pt-4 pl-1 inline-flex items-center text-sm leading-5 font-medium text-gray-500 hover:text-gray-700 hover:border-gray-300 focus:outline-none focus:text-gray-700 focus:border-gray-400 transition ease-in-out duration-150"
+        class="-mt-px pt-4 pl-1 inline-flex items-center text-sm leading-5 font-medium text-dimmed-text-secondary hover:text-dimmed-text-primary transition ease-in-out duration-150"
       >
         Next
-        <!-- Heroicon name: arrow-narrow-right -->
         <svg
-          class="ml-3 h-5 w-5 text-gray-400"
+          class="ml-3 h-5 w-5 text-dimmed-text-secondary"
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 20 20"
           fill="currentColor"
