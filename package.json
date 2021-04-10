@@ -15,6 +15,7 @@
     "@sentry/tracing": "^5.27.3",
     "@tailwindcss/ui": "^0.7.2",
     "autoprefixer": "^9.0.0",
+    "axios": "^0.21.1",
     "gridsome": "^0.7.0",
     "gridsome-plugin-remark-shiki": "^0.5.0",
     "nprogress": "^0.2.0",
@@ -22,6 +23,7 @@
     "typeface-nunito": "^1.1.13",
     "vue-disqus": "^4.0.1",
     "vue-gtag": "^1.10.0",
+    "vue-moments-ago": "^0.2.0",
     "vue-particles": "^1.0.9"
   }
 }

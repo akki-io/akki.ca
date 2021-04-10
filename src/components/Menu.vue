@@ -39,16 +39,22 @@
         </div>
         <nav class="hidden md:flex space-x-10">
           <g-link
-            to="/about"
+            to="/open-source"
             class="text-dimmed-header-text hover:text-dimmed-text-secondary space-x-2 text-base leading-6 font-medium transition ease-in-out duration-150"
           >
-            About
+            Open Source
           </g-link>
           <g-link
             to="/blog"
             class="text-dimmed-header-text hover:text-dimmed-text-secondary space-x-2 text-base leading-6 font-medium transition ease-in-out duration-150"
           >
             Blog
+          </g-link>
+          <g-link
+            to="/about"
+            class="text-dimmed-header-text hover:text-dimmed-text-secondary space-x-2 text-base leading-6 font-medium transition ease-in-out duration-150"
+          >
+            About
           </g-link>
         </nav>
       </div>
@@ -106,13 +112,13 @@
                     </div>
                   </g-link>
                   <g-link
-                    to="/about"
+                    to="/open-source"
                     class="-m-3 p-3 flex items-center space-x-3 rounded-md transition ease-in-out duration-150"
                   >
                     <div
                       class="text-base leading-6 font-medium text-dimmed-header-text"
                     >
-                      About
+                      Open Source
                     </div>
                   </g-link>
                   <g-link
@@ -123,6 +129,16 @@
                       class="text-base leading-6 font-medium text-dimmed-header-text"
                     >
                       Blog
+                    </div>
+                  </g-link>
+                  <g-link
+                    to="/about"
+                    class="-m-3 p-3 flex items-center space-x-3 rounded-md transition ease-in-out duration-150"
+                  >
+                    <div
+                      class="text-base leading-6 font-medium text-dimmed-header-text"
+                    >
+                      About
                     </div>
                   </g-link>
                 </nav>
