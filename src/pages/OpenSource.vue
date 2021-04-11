@@ -11,10 +11,10 @@
         </div>
         <div class="prose prose-xl mx-auto text-dimmed-text-primary">
           <p>
-            I am a Laravel Developer who specializes in Backend Service
-            Development and API development. I design and develop websites and
-            modern backend applications. I have a passion for web standards and
-            solving interesting problems.
+            I have been using many open-source packages throughout my coding
+            career, and it's about time to give back to the community. I have
+            started contributing more to the open-source. Below are some of the
+            projects; rest assured more is to come.
           </p>
         </div>
         <div class="overflow-hidden mt-8">
